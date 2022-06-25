@@ -31,24 +31,24 @@ function showCartItems() {
   const div=document.createElement('div');
  div.classList.add('flex','flex-row','bg-white','rounded-lg','items-stretch','shadow-lg','px-4','py-2','mx-4');
   div.innerHTML= `
-  <div class="w-16 md:w-24 h-auto">
+  <div class="w-24 h-auto md:w-24 ">
     <img class="w-full h-auto" src=${cart.imageUrl}  alt="">
   </div>
 
-  <div class="flex flex-1 flex-col  justify-between px-4 text-xs md:text-xl">
+  <div class="flex flex-1 flex-col  justify-between px-4 py-2 text-xs md:text-xl">
     <span class="font-bold text-slate-800 overflow-hidden">${cart.title}</span>
     <span class="text-orange-600 font-medium">${cart.price} تومان</span>
   </div>
 
-  <div class="flex  flex-col  justify-between  items-end md:gap-x-6 "> 
+  <div class="flex  flex-col  justify-between py-2 items-end md:gap-x-6 "> 
   <i class="fas fa-trash-alt text-orange-500" data-id=${cart.id}></i>
 
   
 
-    <div class="flex items-center gap-x-1 md:gap-x-3">
-    <span data-id=${cart.id} class="_plus cursor-pointer   flex font-medium items-center justify-center rounded-full bg-gray-200 w-4 h-4 md:w-6 md:h-6">+</span>
-    <span class="flex items-center justify-center border border-orange-500 rounded w-3 h-5 md:w-6 md:h-7 text-xs md:text-base" >${cart.quantity}</span>
-    <span data-id=${cart.id} class="_minus cursor-pointer flex font-medium items-center justify-center rounded-full bg-orange-200 w-4 h-4 md:w-6 md:h-6">-</span>
+    <div class="flex items-center gap-x-2  md:gap-x-3">
+    <span data-id=${cart.id} class="_plus cursor-pointer   flex font-medium items-center justify-center rounded-full bg-gray-200 w-5 h-5 md:w-6 md:h-6">+</span>
+    <span class="flex items-center justify-center border border-orange-500 rounded w-4 h-6 md:w-6 md:h-7 text-xs md:text-base" >${cart.quantity}</span>
+    <span data-id=${cart.id} class="_minus cursor-pointer flex font-medium items-center justify-center rounded-full bg-orange-200 w-5 h-5 md:w-6 md:h-6">-</span>
   </div>
  
  
