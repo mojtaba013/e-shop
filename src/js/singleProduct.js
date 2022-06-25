@@ -2,6 +2,7 @@ import { productsData } from "./products.js";
 
 const productImage=document.querySelector('.product-image');
 const productTitle=document.querySelector('.product-title');
+const cartItemsDesktop=document.querySelector('.cartitemsDesktop');
 
 let productId=sessionStorage.getItem('productId');
 function displayProduct(){
@@ -16,3 +17,16 @@ function displayProduct(){
 }
 
 displayProduct();
+countCartItems();
+function countCartItems() {
+    //console.log(cart);
+    let cart=JSON.parse(localStorage.getItem('cart'));
+    let tempCartItems = 0;
+    const totalPrice = cart.reduce((acc, curr) => {
+      tempCartItems += curr.quantity;
+      return curr.quantity * curr.price + acc;
+    }, 0);
+    cartItemsDesktop.innerText = tempCartItems;
+    
+    // total.innerText = `${totalPrice} ریال `;
+  }

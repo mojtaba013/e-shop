@@ -623,8 +623,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-5 {
   height: 1.25rem;
 }
-.h-14 {
-  height: 3.5rem;
+.h-12 {
+  height: 3rem;
 }
 .h-6 {
   height: 1.5rem;
@@ -637,6 +637,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-1 {
   height: 0.25rem;
+}
+.h-14 {
+  height: 3.5rem;
 }
 .h-7 {
   height: 1.75rem;
@@ -697,9 +700,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-4\/5 {
   width: 80%;
-}
-.w-1\/3 {
-  width: 33.333333%;
 }
 .max-w-screen-2xl {
   max-width: 1536px;
@@ -848,6 +848,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-ellipsis {
   text-overflow: ellipsis;
+}
+.whitespace-normal {
+  white-space: normal;
+}
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+.whitespace-pre {
+  white-space: pre;
+}
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+.break-words {
+  overflow-wrap: break-word;
 }
 .rounded-lg {
   border-radius: 0.5rem;
@@ -1104,20 +1122,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .leading-tight {
   line-height: 1.25;
 }
-.leading-8 {
-  line-height: 2rem;
-}
-.leading-snug {
-  line-height: 1.375;
-}
 .leading-3 {
   line-height: .75rem;
-}
-.leading-10 {
-  line-height: 2.5rem;
-}
-.leading-none {
-  line-height: 1;
 }
 .text-slate-800 {
   --tw-text-opacity: 1;
