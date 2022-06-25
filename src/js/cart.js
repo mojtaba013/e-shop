@@ -46,9 +46,9 @@ function showCartItems() {
   
 
     <div class="flex items-center gap-x-1 md:gap-x-3">
-    <span data-id=${cart.id} class="_plus pb-[4px] leading-loose flex font-medium items-center justify-center rounded-full bg-gray-200 w-4 h-4 md:w-6 md:h-6">+</span>
+    <span data-id=${cart.id} class="_plus cursor-pointer pb-[4px]  flex font-medium items-center justify-center rounded-full bg-gray-200 w-4 h-4 md:w-6 md:h-6">+</span>
     <span class="flex items-center justify-center border border-orange-500 rounded w-3 h-5 md:w-6 md:h-7 text-xs md:text-base" >${cart.quantity}</span>
-    <span data-id=${cart.id} class="_minus flex font-medium items-center justify-center rounded-full bg-orange-200 w-4 h-4 md:w-6 md:h-6">-</span>
+    <span data-id=${cart.id} class="_minus cursor-pointer flex font-medium items-center justify-center rounded-full bg-orange-200 w-4 h-4 md:w-6 md:h-6">-</span>
   </div>
  
  
