@@ -3,6 +3,7 @@ import { productsData } from "./products.js";
 const productImage=document.querySelector('.product-image');
 const productTitle=document.querySelector('.product-title');
 const cartItemsDesktop=document.querySelector('.cartitemsDesktop');
+const cartItemsMobile = document.querySelector(".cartitemsMobile");
 
 let productId=sessionStorage.getItem('productId');
 function displayProduct(){
@@ -27,6 +28,6 @@ function countCartItems() {
       return curr.quantity * curr.price + acc;
     }, 0);
     cartItemsDesktop.innerText = tempCartItems;
-    
+    cartItemsMobile.innerText = tempCartItems;
     // total.innerText = `${totalPrice} ریال `;
   }
