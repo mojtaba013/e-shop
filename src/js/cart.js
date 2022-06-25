@@ -36,8 +36,8 @@ function showCartItems() {
   </div>
 
   <div class="flex flex-1 flex-col  justify-between px-4 py-2 text-xs md:text-xl">
-    <span class="font-bold text-slate-800 overflow-hidden">${cart.title}</span>
-    <span class="text-orange-600 font-medium">${cart.price} تومان</span>
+    <span class="text-base font-bold text-slate-800 overflow-hidden">${cart.title}</span>
+    <span class="text-orange-600 text-sm font-medium">${cart.price} تومان</span>
   </div>
 
   <div class="flex  flex-col  justify-between py-2 items-end md:gap-x-6 "> 
