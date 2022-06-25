@@ -159,39 +159,9 @@ function renderPage(_filteredData) {
   _filteredData.forEach((product) => {
     tag += `
     <div class="bg-stone-50 rounded-lg p-2 shadow-xl mb-9">
-     <div class="mb-3 bg-slate-200 p-2 rounded-lg">
+     <div class="mb-3  p-2 rounded-lg">
     <img src=${product.imageUrl} alt="" />
-  </div>
-  <div class="flex w-full justify-between items-center mb-4">
-              <p class="font-medium text-xs text-slate-400">اپل</p>
-
-              <div x-data="{color:'orange'}" class="flex justify-center items-center">
-                <div @click="color='orange'"
-                  class="flex justify-center items-center bg-orange-400 rounded-full w-6 h-6 sm:w-8 sm:h-8 cursor-pointer">
-                  <svg x-show="color==='orange'" xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 sm:w-8 sm:h-8 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div @click="color='yellow'"
-                  class="flex justify-center items-center bg-yellow-400 rounded-full w-6 h-6 sm:w-8 sm:h-8 -mr-0.5 cursor-pointer">
-                  <svg x-show="color==='yellow'" xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 sm:w-8 sm:h-8 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div @click="color='blue'"
-                  class="flex justify-center items-center bg-indigo-600 rounded-full w-6 h-6 sm:w-8 sm:h-8 -mr-0.5 cursor-pointer">
-                  <svg x-show="color==='blue'" xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-4 sm:w-8 sm:h-8 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
+  </div>  
   <p  class="font-medium text-sm text-slate-800 pr-2 mb-2">${product.title}</p>
 
   <p  class="mb-2 text-center font-medium text-orange-700 text-xl sm:text-base">${product.price}</p>

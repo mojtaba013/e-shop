@@ -623,8 +623,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-5 {
   height: 1.25rem;
 }
-.h-14 {
-  height: 3.5rem;
+.h-12 {
+  height: 3rem;
 }
 .h-6 {
   height: 1.5rem;
@@ -637,6 +637,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-1 {
   height: 0.25rem;
+}
+.h-14 {
+  height: 3.5rem;
 }
 .h-7 {
   height: 1.75rem;
@@ -845,6 +848,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .text-ellipsis {
   text-overflow: ellipsis;
+}
+.whitespace-normal {
+  white-space: normal;
+}
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+.whitespace-pre {
+  white-space: pre;
+}
+.whitespace-pre-line {
+  white-space: pre-line;
+}
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+.break-words {
+  overflow-wrap: break-word;
 }
 .rounded-lg {
   border-radius: 0.5rem;
