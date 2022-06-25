@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./build/tailwind.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <title>سبد خرید</title>
+</head>
+
+<body class="bg-gray-100">
+  <!-- desktop navbar -->
+  <nav class=" mx-auto hidden md:block  bg-stone-50 p-4 shadow-lg sticky top-0 z-20 mb-5">
+    <div class="container  mx-auto max-w-screen-2xl  ">
+
+      <div class=" flex gap-8  items-center justify-between ">
+
+        <div class="flex flex-1 flex-row gap-x-4 items-center">
+          <!-- logo  -->
+          <a href="/index.html">
+            <svg width="99" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.744 1.41V5.42H4.732V1.41h4.012Zm1.941 11.569c.173 0 .259.086.259.259v4.503c0 .173-.086.259-.259.259H9.65c-.276 0-.475-.009-.595-.026-.087 1.208-.337 2.235-.751 3.08-.414.863-1.078 1.657-1.993 2.381-.897.725-2.157 1.484-3.779 2.278L.746 21.727c1.208-.725 2.054-1.311 2.537-1.76.483-.449.776-.889.88-1.32.12-.431.181-1.13.181-2.096V7.49h4.762v4.918c0 .173.044.311.13.414a.56.56 0 0 0 .414.156h1.035Zm8.672-.233a5.21 5.21 0 0 1-.699 2.64A5.43 5.43 0 0 1 16.77 17.3a5.12 5.12 0 0 1-2.64.699h-3.442c-.173 0-.26-.086-.26-.259v-4.503c0-.173.087-.26.26-.26h3.39a.497.497 0 0 0 .363-.155.527.527 0 0 0 .155-.388V6.767h4.762v5.979Zm.052 7.325v4.011h-8.024v-4.011h8.024ZM26.094 18a5.119 5.119 0 0 1-2.64-.699 5.43 5.43 0 0 1-1.89-1.915 5.21 5.21 0 0 1-.698-2.64V.322h4.762v12.113c0 .173.043.31.13.414.103.087.232.13.388.13h1.578c.173 0 .26.086.26.259v4.503c0 .173-.087.259-.26.259h-1.63ZM35.798.685v4.011h-8.024V.685h8.024Zm-4.763 6.082h4.763v5.979a5.21 5.21 0 0 1-.7 2.64A5.43 5.43 0 0 1 33.21 17.3a5.119 5.119 0 0 1-2.64.699h-2.846c-.173 0-.26-.086-.26-.259v-4.503c0-.173.087-.26.26-.26h2.795a.496.496 0 0 0 .362-.155.527.527 0 0 0 .155-.388V6.767Z"
+                fill="#222F5D" />
+              <path
+                d="M56.737 12.979c.173 0 .26.086.26.259v4.503c0 .173-.087.259-.26.259h-.724c.034.31.051.544.051.699a5.567 5.567 0 0 1-.776 2.873 5.615 5.615 0 0 1-2.096 2.07 5.614 5.614 0 0 1-2.9.777h-6.108a6.878 6.878 0 0 1-3.545-.958 7.159 7.159 0 0 1-2.589-2.588 6.878 6.878 0 0 1-.957-3.546v-6.833h4.762v6.574c0 .639.224 1.182.673 1.63.466.467 1.018.7 1.656.7h6.186c.207 0 .38-.07.518-.207a.672.672 0 0 0 .207-.492.672.672 0 0 0-.207-.492.702.702 0 0 0-.518-.207h-5.668v-5.021h12.035ZM56.74 18c-.173 0-.259-.086-.259-.259v-4.503c0-.173.086-.26.259-.26h5.798c1.173 0 2.174-.361 3.002-1.086l2.045-1.812-2.977-1.45c-.241-.103-.431-.155-.57-.155-.31 0-.62.138-.93.414l-2.693 2.977-3.313-2.899 2.718-3.313c.552-.656 1.2-1.13 1.941-1.423a5.725 5.725 0 0 1 2.226-.466c.863 0 1.682.207 2.459.62l5.539 2.59a.597.597 0 0 0 .207.05h3.339v4.66h-3.313v.724c0 .173.043.311.13.414a.56.56 0 0 0 .413.156h3.236c.172 0 .258.086.258.259v4.503c0 .173-.086.259-.258.259H72.76c-1.018 0-1.855-.242-2.51-.725-.639-.5-1.165-1.225-1.58-2.174l-.517.518a9.264 9.264 0 0 1-2.925 1.786A9.664 9.664 0 0 1 61.89 18h-5.151Zm3.21 2.07h4.011v4.012h-4.012v-4.011Zm24.72-7.324a5.21 5.21 0 0 1-.698 2.64 5.43 5.43 0 0 1-1.89 1.915 5.12 5.12 0 0 1-2.64.699H76c-.172 0-.259-.086-.259-.259v-4.503c0-.173.087-.26.26-.26h3.39a.496.496 0 0 0 .362-.155.526.526 0 0 0 .155-.388V6.767h4.763v5.979Zm.053 7.325v4.011h-8.024v-4.011h8.024Zm8.315-7.092c.449 0 .673-.181.673-.544a.418.418 0 0 0-.155-.336c-.104-.104-.346-.285-.725-.544l-5.824-4.011 2.718-3.935 6.6 4.582c.707.552 1.242 1.138 1.605 1.76.362.62.543 1.397.543 2.329 0 1.087-.267 2.07-.802 2.95a5.62 5.62 0 0 1-2.122 2.045 6.073 6.073 0 0 1-2.925.725h-6.445v-5.021h6.859Z"
+                fill="#FF755C" /></svg>
+          </a>
+
+         
+        </div>
+
+        <div class="flex gap-4 items-center justify-center">
+          <!-- basket -->
+          <div class="relative cursor-pointer">
+            <a href="./cart.html">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 stroke-slate-700" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </span>
+              <span
+                class=" cartitemsDesktop absolute flex items-center justify-center -top-2 -right-1.5 text-sm font-normal rounded-full bg-red-500 text-white w-5 h-5  ">0</span>
+            </a>
+          </div>
+          <!-- login -->
+          <div class="flex   items-center gap-2 border-2 border-gray-200 rounded-lg px-2 py-2">
+            <div class="flex  items-center  border-l-2  space-x-1 gap-x-1">
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+              </svg>
+              <span class="text-slate-700 font-medium">ورود</span>
+            </div>
+            <span class="text-slate-700 font-medium ">ثبت نام</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <!-- app bar -->
+  <div class="md:hidden flex items-center justify-between mt-4 px-10 mb-5 pb-2 border-b-2 border-gray-200">
+    <div class="font-bold text-2xl cursor-pointer text-slate-700"><a href="/index.html">فروشگاه</a></div>
+    <div class="flex gap-4 items-center justify-center">
+      <!-- basket -->
+      <div class=" relative cursor-pointer">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-slate-700" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </span>
+        <span
+          class=" cartitemsMobile flex items-center justify-center -top-1 -right-1.5 font-normal text-xs rounded-full bg-red-500 text-white w-4 h-4 absolute">0</span>
+
+
+      </div>
+      <!-- login -->
+      <div class="flex   items-center gap-2 border-2 border-gray-200 rounded-lg px-2 py-2">
+        <div class="flex  items-center  border-l-2  space-x-1 gap-x-1">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+          </svg>
+          <span class="text-slate-700 font-medium">ورود</span>
+        </div>
+        <span class="text-slate-700 font-medium ">ثبت نام</span>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- cart content -->
+  <div class="flex flex-col md:flex-row container mx-auto 2xl:max-w-screen-2xl  mb-20">
+    <!-- cart items -->
+    <div class="cartContainer md:w-2/3 lg:3/4 flex flex-col gap-y-2 mb-8">
+      
+
+    </div>
+    <!-- cart summary desktop-->
+    <div class="md:w-1/3 lg:w-1/4  md:flex flex-col items-center hidden  ">
+      <div class="bg-white rounded-lg flex flex-col w-full pt-4 mb-4">
+        <div class="flex flex-row justify-between items-center px-4 mb-4">
+          <span class="text-slate-900">مجموع قیمت :</span>
+          <span class="text-orange-700">6650000</span>
+        </div>
+        <div class="flex flex-row flex-nowrap justify-between items-center px-4 mb-4">
+          <span class="text-sm">کد تخفیف :</span>
+          <div class="flex flex-row    rounded-lg border-0 overflow-hidden ">
+            <input type="text" dir="ltr"
+              class="w-full max-w-[150px] bg-gray-200  border-0 focus:outline-none outline-none p-2 "
+              placeholder="A123BF">
+            <button class="bg-orange-400 px-4 outline-none text-white border-0">تایید</button>
+          </div>
+        </div>
+        <div class="flex flex-row justify-between items-center px-4 mb-11">
+          <span>تخفیف:</span>
+          <span>250000</span>
+        </div>
+        <div class="flex flex-row justify-between items-center px-4 mb-6">
+          <span>قیمت نهایی:</span>
+          <span>6400000</span>
+        </div>
+      </div>
+      <button class="w-full rounded-md py-2 bg-orange-400 text-white outline-none border-0 mb-4">ادامه فرآیند
+        خرید</button>
+      <button class="bg-transparent rounded-md border-2 border-orange-300 py-2 w-full text-orange-400">انصراف از
+        خرید</button>
+    </div>
+    <!-- cart summary mobile -->
+    <div class="md:hidden">
+      <div class="flex flex-col rounded-lg bg-white px-4 mx-4 py-4 mb-5">
+        <div class="flex flex-row justify-between items-center mb-4">
+          <span>مجموع قیمت :</span>
+          <span class="totalprice text-orange-700"></span>
+        </div>
+        <div>
+          <span>کد تخفیف دارید :</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="mb-20 px-8">
+    <button class="md:hidden bg-orange-400 rounded-md text-white py-2 w-full ">ادامه فرآیند خرید</button>
+  </div>
+  <!-- buttom navbar -->
+  <div
+    class="md:hidden shadow-[0_-4px_8px_0_rgba(0,0,0,0.1)] bg-white border border-t-2 fixed bottom-0 left-0 right-0 w-full rounded-tr-md rounded-tl-md px-2 flex items-center">
+    <nav class="w-full">
+      <ul x-data="{activeBottomTab : 1, activeTabClass : 'text-slate-800 font-bold'}"
+        class="flex items-center justify-between gap-x-2 w-full">
+        <li @click="activeBottomTab = 1" :class="activeBottomTab === 1 ? activeTabClass : '' "
+          class="text-xs flex-auto text-gray-400">
+          <a class="flex items-center justify-center w-full py-4" href="#">
+            <span><svg width="32" height="32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26.72 9.094 19.04 3.72c-2.093-1.466-5.307-1.386-7.32.174L5.04 9.107c-1.333 1.04-2.387 3.173-2.387 4.853v9.2c0 3.4 2.76 6.174 6.16 6.174h14.374c3.4 0 6.16-2.76 6.16-6.16v-9.04c0-1.8-1.16-4.014-2.627-5.04ZM17 24c0 .547-.453 1-1 1-.547 0-1-.453-1-1v-4c0-.546.453-1 1-1 .547 0 1 .454 1 1v4Z" />
+              </svg></span>
+            <span class="mr-1" x-show="activeBottomTab ===1">خانه</span>
+          </a>
+        </li>
+        <li @click="activeBottomTab = 2" :class="activeBottomTab === 2 ? activeTabClass : '' "
+          class="text-xs flex-auto text-gray-400">
+          <a class="flex items-center justify-center w-full py-4" href="#">
+            <span><svg width="34" height="34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path
+                    d="M10.257 2.833H7.565c-3.102 0-4.732 1.63-4.732 4.718v2.692c0 3.088 1.63 4.717 4.718 4.717h2.692c3.088 0 4.717-1.629 4.717-4.717V7.55c.014-3.088-1.615-4.718-4.703-4.718ZM26.45 2.833h-2.692c-3.089 0-4.718 1.63-4.718 4.718v2.692c0 3.088 1.63 4.717 4.718 4.717h2.691c3.088 0 4.718-1.629 4.718-4.717V7.55c0-3.088-1.63-4.718-4.718-4.718ZM26.45 19.026h-2.692c-3.089 0-4.718 1.629-4.718 4.717v2.692c0 3.088 1.63 4.718 4.718 4.718h2.691c3.088 0 4.718-1.63 4.718-4.718v-2.692c0-3.088-1.63-4.717-4.718-4.717ZM10.257 19.026H7.565c-3.102 0-4.732 1.629-4.732 4.717v2.692c0 3.103 1.63 4.732 4.718 4.732h2.692c3.088 0 4.717-1.63 4.717-4.718v-2.692c.014-3.102-1.615-4.731-4.703-4.731Z" />
+                </g>
+              </svg></span>
+            <span class="mr-1" x-show="activeBottomTab ===2">دسته بندی</span>
+          </a>
+        </li>
+        <li @click="activeBottomTab = 3" :class="activeBottomTab === 3 ? activeTabClass : '' "
+          class="text-xs flex-auto text-gray-400">
+          <a class="flex items-center justify-center w-full py-4" href="#">
+            <span>
+              <svg width="34" height="34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M28.277 12.693c-.95-1.048-2.38-1.657-4.364-1.87V9.747a6.9 6.9 0 0 0-2.266-5.114c-1.46-1.332-3.358-1.955-5.327-1.771-3.386.326-6.233 3.598-6.233 7.14v.821c-1.984.213-3.415.822-4.364 1.87-1.374 1.53-1.331 3.57-1.176 4.987l.992 7.89c.298 2.763 1.417 5.597 7.508 5.597h7.905c6.092 0 7.211-2.834 7.509-5.582l.992-7.92c.155-1.402.184-3.442-1.176-4.972ZM16.518 4.831c1.417-.128 2.763.312 3.811 1.26a4.925 4.925 0 0 1 1.615 3.656v.991h-9.888v-.736c0-2.522 2.082-4.944 4.462-5.171Zm-4.59 13.798h-.014a1.42 1.42 0 0 1-1.416-1.416 1.424 1.424 0 0 1 2.848 0 1.42 1.42 0 0 1-1.418 1.416Zm9.917 0h-.014a1.42 1.42 0 0 1-1.417-1.416 1.424 1.424 0 0 1 2.848 0 1.42 1.42 0 0 1-1.417 1.416Z" />
+              </svg>
+            </span>
+            <span class="mr-1" x-show="activeBottomTab ===3">سبد خرید</span>
+          </a>
+        </li>
+        <li @click="activeBottomTab = 4" :class="activeBottomTab === 4 ? activeTabClass : '' "
+          class="text-xs flex-auto text-gray-400">
+          <a class="flex items-center justify-center w-full py-4" href="#">
+            <span>
+              <svg width="29" height="25" viewBox="0 0 29 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.8335 0.333496C18.3224 0.333496 16.0779 1.55572 14.6779 3.42239C13.2779 1.55572 11.0335 0.333496 8.52239 0.333496C4.27794 0.333496 0.833496 3.80016 0.833496 8.06683C0.833496 9.71127 1.10016 11.2446 1.54461 12.6446C3.72238 19.5557 10.4779 23.7113 13.8113 24.8446C14.2779 25.0002 15.0557 25.0002 15.5224 24.8446C18.8557 23.7113 25.6113 19.5779 27.7891 12.6446C28.2557 11.2224 28.5002 9.71127 28.5002 8.06683C28.5224 3.80016 25.0779 0.333496 20.8335 0.333496Z" />
+              </svg>
+            </span>
+            <span class="mr-1" x-show="activeBottomTab ===4">علاقه مندی ها</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <!-- <script src="../src/js/index.js" type="module"></script>  -->
+  <script src="/src/js/cart.js"></script>
+
+</body>
+
+</html>

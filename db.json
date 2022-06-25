@@ -1,0 +1,59 @@
+{
+    "pdata": [
+    {
+      "id": 1,
+      "title": "pen1",
+      "price": 100,
+      "imageUrl": "../assets/images/pen1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "pen2",
+      "price": 200,
+      "imageUrl": "../assets/images/pen2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "pen3",
+      "price": 300,
+      "imageUrl": "../assets/images/pen3.jpg"
+    },
+    {
+      "id": 4,
+     "title": "mobile1",
+      "price": 400,
+      "imageUrl": "../assets/images/mobile1.jpg"
+    },
+    {
+      "id": 5,
+      "title": "mobile2",
+      "price": 500,
+      "imageUrl": "../assets/images/mobile2.jpg"
+    },
+    {
+      "id": 6,
+      "title": "mobile3",
+      "price": 600,
+      "imageUrl": "../assets/images/mobile3.jpg"
+    },
+    {
+      "id": 7,
+      "title": "watch1",
+      "price": 700,
+      "imageUrl": "../assets/images/watch7.jpg"
+    },
+    {
+      "id": 8,
+      "title": "watch2",
+      "price": 800,
+      "imageUrl": "../assets/images/watch8.jpg"
+    },
+    {
+      "id": 9,
+      "title": "watch3",
+      "price": 900,
+      "imageUrl": "../assets/images/watch9.jpg"
+    }
+  ]
+}
+  
