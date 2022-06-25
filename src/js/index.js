@@ -60,9 +60,9 @@ function displayAllProducts() {
     </div>
 
 
- <div  class="h-12 flex items-center   ">
+ <div  class="h-14 flex items-start flex-col  overflow-hidden  text-ellipsis">
  <a href="/public/singleProduct.html">
- <span data-id=${product.id}  class="title flex items-center justify-center font-medium text-sm  pr-2 mb-2 overflow-hidden text-ellipsis ">${product.title}</span>
+ <span data-id=${product.id}  class="title flex items-center justify-center font-medium text-sm  pr-2 mb-2   ">${product.title}</span>
  </a>
   
   </div>
