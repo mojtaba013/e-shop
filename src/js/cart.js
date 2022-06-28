@@ -117,7 +117,7 @@ container.addEventListener("click", (e) => {
     //console.log(_id);
     const product = cart.find((crt) => crt.id == _id);
     if (product.quantity === 1) {
-      e.target.parentElement.parentElement.parentElement.remove();
+      e.target.parentElement.parentElement.parentElement.parentElement.remove();
       removeCartItems(_id);
       return;
     }
