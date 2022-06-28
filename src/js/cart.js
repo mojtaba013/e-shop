@@ -38,9 +38,9 @@ function showCartItems() {
         </div>
 
         <div class=" row-span-1  flex items-center justify-center gap-x-2 ">
-          <span data-id=${cart.id} class="_plus cursor-pointer   flex font-medium items-center justify-center rounded-full bg-gray-200 w-5 h-5 md:w-6 md:h-6">+</span>
-          <span class="flex items-center justify-center border border-orange-500 rounded w-4 h-6 md:w-6 md:h-7 text-xs md:text-base" >${cart.quantity}</span>
-          <span data-id=${cart.id} class="_minus cursor-pointer flex font-medium items-center justify-center rounded-full bg-orange-200 w-5 h-5 md:w-6 md:h-6">-</span>
+          <span data-id=${cart.id} class="_plus cursor-pointer   flex font-medium items-center justify-center rounded-full bg-gray-200 w-6 h-6 md:w-7 md:h-7">+</span>
+          <span class="flex items-center justify-center border border-orange-500 rounded w-4 h-7 md:w-7 md:h-8 text-xs md:text-base" >${cart.quantity}</span>
+          <span data-id=${cart.id} class="_minus cursor-pointer flex font-medium items-center justify-center rounded-full bg-orange-200 w-6 h-6 md:w-7 md:h-7">-</span>
         </div>
 
         <div  class="col-span-3 row-span-4 py-2 ">
