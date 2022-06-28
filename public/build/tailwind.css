@@ -1113,6 +1113,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-light {
   font-weight: 300;
 }
+.font-semibold {
+  font-weight: 600;
+}
 .leading-tight {
   line-height: 1.25;
 }

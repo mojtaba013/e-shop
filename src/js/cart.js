@@ -45,7 +45,7 @@ function showCartItems() {
 
         <div  class="col-span-3 row-span-4 py-2 ">
         <section class="flex flex-col items-start justify-between">
-            <span class="text-sm font-medium text-gray-700">${cart.title}</span>
+            <span class="text-sm font-semibold text-gray-700">${cart.title}</span>
             <div class="flex items-center gap-x-2">
             <span class="text-xs font-normal text-gray-500" >سری پردازنده:</span>
             <span class="font-normal text-slate-800" >celeron</span>
