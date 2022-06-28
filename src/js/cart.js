@@ -56,11 +56,11 @@ function showCartItems() {
               <span class="font-medium text-slate-800 " >celeron</span>
               </div>
               <div class="flex items-center gap-x-2">
-              <span class="text-xs font-base text-gray-500" >ظرفیت حافظه RAM :</span>
+              <span class="text-xs font-base text-gray-500 md:text-base" >ظرفیت حافظه RAM :</span>
               <span class="font-medium text-slate-800" >4 گیگ</span>
               </div>
               <div class="flex items-center gap-x-2">
-              <span class="text-xs font-base text-gray-500" >اندازه صفحه نمایش :</span>
+              <span class="text-xs font-base text-gray-500 md:text-base" >اندازه صفحه نمایش :</span>
               <span class="font-medium text-slate-800" >15.6 اینچ</span>
               </div>            
               
